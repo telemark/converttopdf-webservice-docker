@@ -4,12 +4,6 @@
 
 Upload document, get pdf in return.
 
-```sh
-curl \
-  -F "file=@test/data/testdoc.docx" \
-  http://localhost:3000 > converted.pdf
-```
-
 ## Docker
 
 Build the image
@@ -22,4 +16,12 @@ Run the image
 
 ```sh
 docker run -d -p 80:3000 --name pdf pdfconverter
+```
+
+Convert a document
+
+```sh
+curl \
+  -F "file=@test/data/testdoc.docx" \
+  http://192.168.99.100 > converted.pdf
 ```
