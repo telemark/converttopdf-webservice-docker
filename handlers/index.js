@@ -42,7 +42,7 @@ function handleUpload (request, reply) {
               } else {
                 reply.file(fileNameTempConverted, {
                   filename: newNameConverted
-                }).on('finish', function(){
+                }).on('finish', function () {
                   fs.unlink(fileNameTempOriginal)
                   fs.unlink(fileNameTempConverted)
                 })
