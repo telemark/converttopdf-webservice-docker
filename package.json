@@ -1,6 +1,6 @@
 {
   "name": "converttopdf-webservice-docker",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Upload document, get pdf in return",
   "license": "MIT",
   "author": {
@@ -17,7 +17,7 @@
     "node": ">=4.5.0"
   },
   "scripts": {
-    "test": "standard && tap --reporter=spec test/*.js",
+    "test": "standard && nsp check && tap --reporter=spec test/*.js",
     "coverage": "tap test/*.js --coverage",
     "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls",
     "start": "node standalone.js",
@@ -28,15 +28,16 @@
     "url": "git://github.com/telemark/converttopdf-webservice-docker.git"
   },
   "devDependencies": {
-    "coveralls": "^2.11.6",
-    "standard": "^5.4.1",
-    "tap": "^4.0.0"
+    "coveralls": "2.11.12",
+    "nsp": "2.6.1",
+    "standard": "7.1.2",
+    "tap": "6.3.2"
   },
   "dependencies": {
-    "docxtemplater": "^1.2.1",
-    "hapi": "^11.1.4",
-    "inert": "^3.2.0",
-    "unoconv2": "^1.0.0",
-    "uuid": "^2.0.1"
+    "docxtemplater": "2.1.4",
+    "hapi": "14.2.0",
+    "inert": "4.0.1",
+    "unoconv2": "1.0.0",
+    "uuid": "2.0.2"
   }
 }

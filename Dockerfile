@@ -22,7 +22,7 @@ COPY . /src
 WORKDIR "/src"
 
 # Install dependencies
-RUN npm install
+RUN npm install --production
 
 # Env variables
 ENV SERVER_PORT 3000
