@@ -1,6 +1,6 @@
 {
   "name": "converttopdf-webservice-docker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Upload document, get pdf in return",
   "license": "MIT",
   "author": {
@@ -14,7 +14,7 @@
   "homepage": "https://github.com/telemark/converttopdf-webservice-docker",
   "main": "index.js",
   "engines": {
-    "node": ">=4.2.4"
+    "node": ">=4.5.0"
   },
   "scripts": {
     "test": "standard && tap --reporter=spec test/*.js",

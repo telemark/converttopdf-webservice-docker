@@ -4,23 +4,16 @@
 #
 ###########################################################
 
-# Setting the base to nodejs 4.2
-FROM node:4.2.4-slim
+# Setting the base to nodejs 4.5.0
+FROM node:4.5.0-slim
 
 # Maintainer
 MAINTAINER Geir Gåsodden
 
 #### Begin setup ####
 
-# Installs unoconv
-RUN \
-	apt-get update && \
-	DEBIAN_FRONTEND=noninteractive \
-		apt-get install -y \
-			unoconv \
-	&& \
-	apt-get clean && \
-	rm -rf /var/lib/apt/lists/
+# Installs git and unoconv
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y git unoconv && apt-get clean
 
 # Bundle app source
 COPY . /src
@@ -38,4 +31,4 @@ ENV SERVER_PORT 3000
 EXPOSE 3000
 
 # Startup
-ENTRYPOINT /usr/bin/unoconv --listener --server=0.0.0.0 --port=2002 && node standalone.js
+ENTRYPOINT /usr/bin/unoconv --listener --server=0.0.0.0 --port=2002 & node standalone.js
