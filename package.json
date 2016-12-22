@@ -1,6 +1,6 @@
 {
   "name": "converttopdf-webservice-docker",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "Upload document, get pdf in return",
   "license": "MIT",
   "private": true,
