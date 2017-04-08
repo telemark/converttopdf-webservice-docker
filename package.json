@@ -30,12 +30,12 @@
   },
   "devDependencies": {
     "coveralls": "2.12.0",
-    "nsp": "2.6.2",
+    "nsp": "2.6.3",
     "standard": "8.6.0",
-    "tap": "10.3.0"
+    "tap": "10.3.1"
   },
   "dependencies": {
-    "hapi": "16.1.0",
+    "hapi": "16.1.1",
     "inert": "4.1.0",
     "unoconv2": "1.0.0",
     "uuid": "3.0.1"
