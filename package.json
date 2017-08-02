@@ -1,6 +1,6 @@
 {
   "name": "converttopdf-webservice-docker",
-  "version": "2.0.31",
+  "version": "2.0.32",
   "description": "Upload document, get pdf in return",
   "license": "MIT",
   "private": true,
@@ -35,8 +35,8 @@
     "tap": "10.3.2"
   },
   "dependencies": {
-    "inert": "4.2.0",
-    "hapi": "16.5.0",
+    "inert": "4.2.1",
+    "hapi": "16.4.2",
     "unoconv2": "1.0.0",
     "uuid": "3.1.0"
   }
