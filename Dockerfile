@@ -5,7 +5,7 @@
 ###########################################################
 
 # Setting the base to nodejs 4.6.2
-FROM node:4.6.2-slim
+FROM node
 
 # Maintainer
 MAINTAINER Geir Gåsodden
