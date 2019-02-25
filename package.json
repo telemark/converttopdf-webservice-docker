@@ -15,7 +15,7 @@
   "homepage": "https://github.com/telemark/converttopdf-webservice-docker",
   "main": "index.js",
   "engines": {
-    "node": ">=4.6.2"
+    "node": ">=8.15.0"
   },
   "scripts": {
     "test": "standard && nsp check && tap --reporter=spec test/**/*.js",

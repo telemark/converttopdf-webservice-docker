@@ -1,14 +1,4 @@
-###########################################################
-#
-# Dockerfile for convertopdf-webservice-docker
-#
-###########################################################
-
-# Setting the base to nodejs 4.6.2
-FROM node:4.9.1-slim
-
-# Maintainer
-MAINTAINER Geir Gåsodden
+FROM node:8.15.0-slim
 
 #### Begin setup ####
 
