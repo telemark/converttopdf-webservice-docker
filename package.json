@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "inert": "4.2.1",
-    "hapi": "16.7.0",
+    "hapi": "18.1.0",
     "unoconv2": "1.0.0",
     "uuid": "3.3.2"
   }
