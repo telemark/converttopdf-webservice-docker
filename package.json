@@ -33,7 +33,7 @@
   "devDependencies": {
     "coveralls": "3.0.14",
     "standard": "14.3.4",
-    "tap": "14.6.4"
+    "tap": "14.6.9"
   },
   "dependencies": {
     "inert": "4.2.1",
